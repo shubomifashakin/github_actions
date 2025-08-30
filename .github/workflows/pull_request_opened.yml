@@ -1,0 +1,14 @@
+name: Pull Request Opened
+
+on:
+  pull_request:
+    types: [opened]
+    branches:
+      - main
+
+jobs:
+  print-log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print the log
+        run: echo the pul request was opened

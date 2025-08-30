@@ -2,8 +2,6 @@ name: Pull Request Closed
 
 on:
   pull_request_target:
-    branches:
-      - dev
     types:
       - closed
 

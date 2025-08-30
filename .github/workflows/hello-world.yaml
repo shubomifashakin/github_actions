@@ -7,16 +7,19 @@ on:
     branches:
       - main
   workflow_dispatch:
-    jobs:
 
-    hello:
+jobs:
+  hello:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2 #pulls the code that triggers this workflow into the runner - name: hello world run: echo "Hello World"
+      - uses: actions/checkout@v2 #pulls the code that triggers this workflow into the runner
+      - name: hello world
+        run: echo "Hello World"
+        shell: bash
 
-    goodbye:
-      runs-on: ubuntu-latest
-      steps:
-        - name: goodbye world
-          run: echo 'goodbye world'
-          shell: bash
+  goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: goodbye world
+        run: echo 'goodbye world'
+        shell: bash

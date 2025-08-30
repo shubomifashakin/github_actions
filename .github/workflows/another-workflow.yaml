@@ -1,12 +1,12 @@
-name: Hello world
+name: Another Workflow
 
 on:
   push:
     branches:
-      - main
+      - dev
   pull_request:
     branches:
-      - main
+      - dev
   workflow_dispatch:
 
 jobs:

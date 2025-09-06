@@ -1,4 +1,4 @@
-name: SHould Trigger Only When Index Changed
+name: Should Trigger Only When Index Changed
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "src/index.html"
+  workflow_dispatch:
 
 jobs:
   print-log:

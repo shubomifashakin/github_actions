@@ -1,0 +1,15 @@
+name: SHould Trigger Only When Index Changed
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/index.html"
+
+jobs:
+  print-log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print the log
+        run: echo the index.html was changed

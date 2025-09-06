@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print the log
-        run: echo the index.html was changed
+        run: echo the index.html was changed again
